@@ -11,3 +11,11 @@ header {
   background-image: url(../img/rocket.svg);
   background-size: contain;
 }
+
+.grid {
+  display: grid;
+  margin: 0 auto;
+  padding: 20px;
+  grid-template-columns: 333px 333px 333px;
+  gap: 30px;
+}

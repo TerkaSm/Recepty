@@ -34,6 +34,7 @@ document.querySelector('#root').innerHTML = render(
                 <img className='recept__img' src="{img}" alt="{nazev}" />
               </figcaption>
               <p className='recept__nazev'>{nazev}</p>
+              <a className='recept__link' href="#">Více</a>
             </div>
             )
         })}

@@ -12,8 +12,19 @@
   },
   {
     "id": 2,
-    "img": "./assets/jidlo-2.jpg",
+    "img": "http://localhost:4000/assets/jidlo-2.jpg",
     "nazev": "Recept 2",
+    "surovina-1": "",
+    "surovina-2": "",
+    "surovina-3": "",
+    "surovina-4": "",
+    "surovina-5": "",
+    "postup": ""
+  },
+  {
+    "id": 3,
+    "img": "http://localhost:4000/assets/jidlo-3.jpg",
+    "nazev": "Recept 3",
     "surovina-1": "",
     "surovina-2": "",
     "surovina-3": "",

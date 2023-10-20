@@ -12,7 +12,7 @@
     "@czechitas/render": "^0.3.1"
   },
   "devDependencies": {
-    "vite": "^4.4.11",
-    "glob": "^10.3.0"
+    "glob": "^10.3.10",
+    "vite": "^4.5.0"
   }
 }

@@ -9,13 +9,8 @@ html {
 }
 
 .container {
-  max-width: 20rem;
+  max-width: 18rem;
   margin-right: auto;
   margin-left: auto;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: 333px 333px 333px;
-  gap: 30px;
-}
