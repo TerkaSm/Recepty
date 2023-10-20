@@ -1,0 +1,10 @@
+.RecipeDetail {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.RecipeDetail__flex {
+  display: flex;
+  gap: 30px;
+}

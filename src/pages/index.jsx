@@ -1,44 +1,50 @@
 import { render } from '@czechitas/render';
+import { RecipeCard } from '../components/RecipeCard';
 import '../global.css';
 import './index.css';
 
 
 
-const odpoved = await fetch('http://localhost:4000/api/recepty', {
+const answer = await fetch('http://localhost:4000/api/recipes', {
   method: 'GET',
 });
 
-const teloOdpovedi = await odpoved.json()
-console.log(teloOdpovedi)
-console.log(teloOdpovedi.result)
+const bodyOfResult = await answer.json()
+console.log(bodyOfResult)
+console.log(bodyOfResult.result)
 
-const recepty = teloOdpovedi.result
+const recipes = bodyOfResult.result
 
-console.log(recepty);
-
-
+console.log(recipes);
 
 document.querySelector('#root').innerHTML = render(
   <div className="container">
     <header>
-      <h1>Recepty</h1>
+      <h1 className='heading__primary'>Recepty</h1>
     </header>
     <main>
-      <div className='grid'>
-        {recepty.map((recept) => {
-          const { id, nazev } = recept;
 
-            return (
-            <div className='recept' key={id}>
-              <figcaption className='recept__fig'>
-                <img className='recept__img' src="{img}" alt="{nazev}" />
-              </figcaption>
-              <p className='recept__nazev'>{nazev}</p>
-              <a className='recept__link' href="#">Více</a>
-            </div>
-            )
+      <div className='grid'>
+        {recipes.map((recipe) => {
+          const { id, img, name } = recipe
+
+          return <RecipeCard key={id} id={recipe.id} img={recipe.img} name={recipe.name} />
+
         })}
       </div>
+      
+      <br />
+
+      <form action="">
+        <label>
+            text receptu
+          <input type="text" id="textRecipe" />
+        </label>
+        <div>
+          <button className='button' type='submit'>Přidat recept</button>
+        </div>
+      </form>
+      
     </main>
   </div>,
 );

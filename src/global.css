@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
 
 * {
   box-sizing: border-box;
@@ -9,8 +10,40 @@ html {
 }
 
 .container {
-  max-width: 18rem;
-  margin-right: auto;
-  margin-left: auto;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: 'Ms Madi', cursive;
+  font-weight: 400;
+}
+
+.heading__primary {
+  color: rgb(94, 93, 93);
+  font-family: 'Ms Madi', cursive;
+  font-size: 80px;
+  margin-top: 0;
+  font-weight: 400;
+}
+
+.button {
+  flex: 1 1 auto;
+  display: inline-block;
+  text-decoration: none;
+  padding: 8px 15px;
+  color: white;
+  font-size: 16px;
+  background-color: rgb(213, 171, 65);
+  border: none;
+  border-radius: 20px;
+}
+
+.button:hover {
+  background-color: rgb(120, 46, 46);
+}
+
+.button--secondary {
+  background-color: rgb(182, 182, 182);
 }
 

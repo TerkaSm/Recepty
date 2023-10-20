@@ -5,17 +5,12 @@ header {
   margin-top: 4rem;
 }
 
-.logo {
-  width: 10rem;
-  height: 10rem;
-  background-image: url(../img/rocket.svg);
-  background-size: contain;
-}
 
 .grid {
   display: grid;
   margin: 0 auto;
   padding: 20px;
   grid-template-columns: 333px 333px 333px;
-  gap: 30px;
+  gap: 60px 30px;
 }
+
