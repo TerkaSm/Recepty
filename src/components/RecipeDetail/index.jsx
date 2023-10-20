@@ -4,7 +4,7 @@ export const RecipeDetail = ({ id, img, name, ingredient1, ingredient2, ingredie
     <div className='RecipeDetail' key={id}>
         <div className='RecipeDetail__flex'>
           <figcaption className='RecipeDetail__'>
-            <img className='RecipeDetail__' src={img} alt={name} />
+            <img className='RecipeDetail__img' width='333' src={img} alt={name} />
           </figcaption>
           <div className='RecipeDetail__'>
             <h1 className='RecipeDetail__'>{name}</h1>
@@ -19,6 +19,10 @@ export const RecipeDetail = ({ id, img, name, ingredient1, ingredient2, ingredie
           </div>
         </div>
         <p className='RecipeDetail__'>{process}</p>
-        <a className='button' href="index.html">Zpět</a>
+        <div>
+            <p><a className='button' href="index.html">Zpět</a></p>
+            <p><button id='delete-button' className='button button--secondary' href="#">Smazat recept</button></p>
+        </div>
     </div>
 )
+

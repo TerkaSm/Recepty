@@ -30,3 +30,15 @@ document.querySelector('#root').innerHTML = render(
     </main>
   </div>,
 );
+
+const onClick = async (event) => {
+    const answer = await fetch (`http://localhost:4000/api/recipes/${id}`, {
+    method: 'DELETE',
+    })
+
+    const bodyAnswer = await answer.json()
+
+    window.location='/'
+}
+
+document.querySelector('#delete-button').addEventListener('click', onClick)
